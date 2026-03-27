@@ -3,6 +3,14 @@ import nextra from "nextra";
 
 const nextConfig: NextConfig = {
   /* regular Next.js config options here */
+  reactStrictMode: true,
+  images: {
+    unoptimized: true,
+  },
+  distDir: "out",
+  output: "export",
+  basePath: "",
+  assetPrefix: "",
   turbopack: {
     resolveAlias: {
       // Path to your `mdx-components` file with extension
